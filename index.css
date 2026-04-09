@@ -208,19 +208,43 @@ span {
 .box {
     height: 400px;
     width: 360px;
-    border: 1px solid black;
     background-color: white;
 }
 
 .image{
     height: 300px;
     width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 .content{
     display: flex;
     flex-direction: column;
-    padding: 10px 20px 10px 20px;
+    padding: 20px 20px 20px 20px; 
+}
+
+.content h3{
+    font-weight: bold;
+    font-size: 1.3rem;
 }
 
 
+.image_grid{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+}
+
+.img {
+    height: 100px;
+    width: 150px;
+    background-size: cover;
+}
+
+.box a{
+    display: inline-block;
+    margin-top: 20px;
+    color: #007185;
+    text-decoration: none;
+}
 
