@@ -180,28 +180,35 @@ span {
 }
 
 /* hero image */
+
+main{
+    background-color: #E3E6E6;
+}
 .hero_image {
-    background:
-      linear-gradient(to bottom,
-       rgba(255,255,255,0) 60%,
-       rgba(255,255,255,0.5) 80%,
-       white 100%),
+    background:linear-gradient(
+      to bottom,
+      rgba(227,230,230,0) 60%,
+      rgba(227,230,230,0.6) 80%,
+      #E3E6E6 100%
+      ),
       url('image/hero_image2.jpg');
+
     background-size: cover;
     background-position: center;
-    height: 550px;
+    height: 600px;
     width: 100%;
 }
 
 
 /* hero section */
 
+
 .hero_content {
-    display: flex;
-    justify-content: space-evenly;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
     position: relative;
     z-index: 2;
-    margin-top: -250px;
+    margin-top: -350px;
 
 }
 
