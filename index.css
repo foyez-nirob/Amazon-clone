@@ -1,7 +1,7 @@
 * {
-    margin : 0;
+    margin: 0;
     font-family: Arial;
-    border : boder-box;
+    border: boder-box;
 }
 
 .nav_bar {
@@ -14,7 +14,7 @@
     justify-content: space-evenly;
 }
 
-.logo_box{
+.logo_box {
     height: 55px;
     width: 100px;
 }
@@ -31,7 +31,7 @@
     border-radius: 2px;
 }
 
-.border:hover{
+.border:hover {
     border: 1.2px solid white;
     border-radius: 2px;
     transition: 0.5ms;
@@ -41,35 +41,35 @@
 
 .loc_text1 {
     font-size: 0.85rem;
-    color : #cccccc;
+    color: #cccccc;
     margin-left: 19px;
 }
 
-.loc_text2{
+.loc_text2 {
     font-size: 1rem;
     font-weight: bold;
 }
 
-.loc_icon{
+.loc_icon {
     display: flex;
     align-items: center;
 }
 
 /* search box */
 
-.nav_search{
+.nav_search {
     display: flex;
-    width : 600px;
+    width: 600px;
     /* height: 60px; */
     justify-content: space-evenly;
 }
 
-.nav_search:hover{
-    border:2px solid rgb(245, 162, 45);
+.nav_search:hover {
+    border: 2px solid rgb(245, 162, 45);
     border-radius: 7px;
-} 
+}
 
-.select_item{
+.select_item {
     height: 40px;
     width: 50px;
     background-color: #e0e0e0;
@@ -79,13 +79,13 @@
     border: none;
 }
 
-.search_box{
+.search_box {
     width: 100%;
     border: none;
     font-size: 1rem;
 }
 
-.search_icon{
+.search_icon {
     display: flex;
     height: 40px;
     width: 50px;
@@ -98,25 +98,26 @@
     border-bottom-right-radius: 4px;
 }
 
-.search_icon:hover{
-    background-color:  rgb(245, 162, 45);
+.search_icon:hover {
+    background-color: rgb(245, 162, 45);
 }
 
 /* flag box */
 
-.flag_box{
+.flag_box {
     height: 45px;
     width: 45px;
     display: flex;
     margin-top: 45px;
-    
+
 }
 
-.flag_box p{
+.flag_box p {
     font-size: 0.9rem;
     font-weight: 600;
 }
-.flag{
+
+.flag {
     background-image: url(image/america.png);
     background-size: cover;
     height: 15px;
@@ -129,18 +130,22 @@
 span {
     font-size: 0.85rem;
 }
-.sign_in_text{
+
+.sign_in_text {
     font-weight: 700;
 }
-.cart{
+
+.cart {
     display: flex;
     height: 30px;
     margin-top: 10px;
 }
+
 .cart i {
-   font-size: 25px;
+    font-size: 25px;
 }
-.cart p{
+
+.cart p {
     font-size: 0.9rem;
     margin-top: 8px;
     font-weight: 700;
@@ -148,7 +153,7 @@ span {
 
 /* panel */
 
-.panel{
+.panel {
     display: flex;
     background-color: #222f3d;
     height: 40px;
@@ -156,16 +161,20 @@ span {
     align-items: center;
     font-size: 0.9rem;
 }
-.all_icon{
+
+.all_icon {
     font-weight: bold;
 }
-.all_icon i{
+
+.all_icon i {
     font-size: 1.3rem;
 }
-.panel_icons{
+
+.panel_icons {
     width: 70%;
 }
-.panel div{
+
+.panel div {
     margin-left: 10px;
     margin-right: 10px;
     height: 40px;
@@ -174,24 +183,24 @@ span {
     padding-left: 3px;
     padding-right: 3px;
 }
-.box7{
+
+.box7 {
     font-size: 1rem;
     font-weight: 700;
 }
 
 /* hero image */
 
-main{
+main {
     background-color: #E3E6E6;
 }
+
 .hero_image {
-    background:linear-gradient(
-      to bottom,
-      rgba(227,230,230,0) 60%,
-      rgba(227,230,230,0.6) 80%,
-      #E3E6E6 100%
-      ),
-      url('image/hero_image2.jpg');
+    background: linear-gradient(to bottom,
+            rgba(227, 230, 230, 0) 60%,
+            rgba(227, 230, 230, 0.6) 80%,
+            #E3E6E6 100%),
+        url('image/hero_image2.jpg');
 
     background-size: cover;
     background-position: center;
@@ -202,56 +211,153 @@ main{
 
 /* hero section */
 
-
 .hero_content {
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
     position: relative;
-    z-index: 2;
+    z-index: 1;
     margin-top: -350px;
+    column-gap: 20px;
+}
 
+.hero_content0 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 30px;
+    margin-left: 20px;
 }
 
 .box {
-    height: 400px;
-    width: 360px;
+    height: 420px;
+    width: 315px;
     background-color: white;
 }
 
-.image{
+.image_box0 {
     height: 300px;
     width: 100%;
     margin-top: 10px;
     margin-bottom: 10px;
+    cursor: pointer;
+    transition: transform 0.2s;
 }
-.content{
+
+.content_box0 {
     display: flex;
     flex-direction: column;
-    padding: 20px 20px 20px 20px; 
+    padding: 20px 20px 20px 20px;
 }
 
-.content h3{
+.content_box1 {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 20px 20px 20px;
+}
+
+.box h3 {
     font-weight: bold;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
 }
 
-
-.image_grid{
+.image_grid {
     display: grid;
-    grid-template-columns: repeat(2,1fr);
-    gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 10px;
+    row-gap: 30px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.item {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .img {
-    height: 100px;
-    width: 150px;
+    height: 110px;
+    width: 130px;
     background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    transition: transform 0.2s;
 }
 
-.box a{
+.box a {
     display: inline-block;
     margin-top: 20px;
     color: #007185;
     text-decoration: none;
+    font-size: 0.9rem;
 }
 
+.box p {
+    font-size: 0.8rem;
+    font-weight: 200;
+    cursor: pointer;
+}
+
+/* big boxes */
+
+.big_box {
+    background: white;
+    margin: 20px;
+    padding: 20px;
+    margin-right: 35px;
+}
+
+.product_container {
+    margin-top: 10px;
+    position: relative;
+}
+
+.images_row::-webkit-scrollbar {
+    display: none;
+}
+
+.images_row {
+    display: flex;
+    gap: 15px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    cursor: pointer;
+}
+
+.row_image {
+    min-width: 150px;
+    flex-shrink: 0;
+}
+
+.row_image img {
+    width: auto;
+    height: 200px;
+}
+
+.big_box h3 {
+    font-size: 1.3rem;
+}
+
+.scroll-btn {
+    position: absolute;
+    top: 30%;
+
+    background: white;
+    border: none;
+    font-size: 50px;
+    cursor: pointer;
+
+    padding: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    opacity: 0;
+}
+
+.product_container:hover .scroll-btn {
+    transition: 1.5s;
+    opacity: 0.8;
+}
+
+.scroll-btn.left {
+    left: 0;
+}
+
+.scroll-btn.right {
+    right: 0;
+}
